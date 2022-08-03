@@ -12,7 +12,7 @@ console.log(sumTo(3));
 const sentance = "Lorem ipsum dolor sit amet";
 function findShort(string) {
     let array = string.split(" ");
-    return array.reduce((elem, index) => index.length < elem.length ? index : elem, array[0]);
+    return array.reduce((elem, currentElem ) => currentElem .length < elem.length ? currentElem  : elem, array[0]);
 };
 console.log(findShort(sentance));
 console.log(findShort("Hello world")); 
